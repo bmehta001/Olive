@@ -478,7 +478,7 @@ class Telemetry:
             if os.environ.get("OLIVE_DISABLE_TELEMETRY") == "1":
                 self.disable_telemetry()
         except Exception:
-            self._initialized = True
+            pass
 
     @staticmethod
     def _is_ci_environment() -> bool:
